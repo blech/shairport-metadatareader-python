@@ -190,7 +190,7 @@ class AirplayListener(EventDispatcher):
         Each subclass should override this method.
         """
         # try to start shairport-sync daemon
-        start_shairport_daemon()
+        #start_shairport_daemon()
 
     def stop_listening(self):
         """
@@ -200,7 +200,7 @@ class AirplayListener(EventDispatcher):
         self._is_listening = False
 
         # try to stop shairport-sync
-        stop_shairport_daemon()
+        #stop_shairport_daemon()
 
     # ------------------------------------------------ data processing -------------------------------------------------
 
@@ -237,6 +237,7 @@ class AirplayListener(EventDispatcher):
             elif item.code == "pcen":
                 # send artwork when all data is received
                 self.artwork = self._artwork
+                print("The artwork is %s" % self.artwork)
             elif item.code == "mdst":
                 # reset track information when new metadata starts
                 # self.track_info = {}

@@ -10,7 +10,7 @@ from .airplaylistener import AirplayListener, logger
 
 
 # import this name to use the dafault socket
-DEFAULT_ADDRESS = "127.0.0.1"
+DEFAULT_ADDRESS = "0.0.0.0"
 DEFAULT_PORT = 5555
 
 
@@ -18,7 +18,7 @@ class AirplayUDPListener(AirplayListener):
     """
     Airplay listener class to read the shairport-sync udp server backend.
     """
-    def __init__(self, *args, socket_address=DEFAULT_ADDRESS, socket_port=DEFAULT_PORT, **kwargs):
+    def __init__(self, socket_address=DEFAULT_ADDRESS, socket_port=DEFAULT_PORT, *args, **kwargs):
         """
         :param socket_addr: tuple consisting of (socket_ip, socket_port)
         """

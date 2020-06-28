@@ -17,7 +17,7 @@ class AirplayPipeListener(AirplayListener):
     """
     Airplay listener class to read the shairport-sync pipe backend.
     """
-    def __init__(self, *args, pipe_name=DEFAULT_PIPE_FILE, **kwargs):
+    def __init__(self, pipe_name=DEFAULT_PIPE_FILE, *args, **kwargs):
         """
         :param pipe_name: path to shairport-sync pipe file
         """
