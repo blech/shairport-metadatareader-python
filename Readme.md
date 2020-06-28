@@ -17,10 +17,13 @@ In addition, it includes a `remote` sub-package to remotely control the Airplay 
 - [libconf](https://pypi.org/project/libconf/) `pip install libconf` (if you want to use the [`libconf_init.py`](examples/libconf_init.py) example)    
 
 ## Installation
-`pip install git+https://github.com/Schlaubischlump/shairport-metadatareader-python`
+
+Important: Use Python2
+
+`pip install git+https://github.com/htruong/shairport-metadatareader-python`
 
 ## Bugs
-- I don't know. Let me know!   
+- Report bugs on issues tab
 ...
 
 ## Example (Read Metadata)
