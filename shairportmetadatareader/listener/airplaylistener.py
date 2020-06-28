@@ -237,7 +237,6 @@ class AirplayListener(EventDispatcher):
             elif item.code == "pcen":
                 # send artwork when all data is received
                 self.artwork = self._artwork
-                print("The artwork is %s" % self.artwork)
             elif item.code == "mdst":
                 # reset track information when new metadata starts
                 # self.track_info = {}
