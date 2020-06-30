@@ -18,7 +18,7 @@ class AirplayMQTTListener(AirplayListener):
     the future). Make sure that that you configured shairport-sync to send the raw data (`publish_raw`).
     The `enable_remote` option is not required for the `AirplayRemote` instance to work.
     """
-    def __init__(self, *args, hostname=DEFAULT_BROKER, port=DEFAULT_MQTT_PORT, topic=gethostname(), **kwargs):
+    def __init__(self, hostname=DEFAULT_BROKER, port=DEFAULT_MQTT_PORT, topic=gethostname(), *args, **kwargs):
         """
         :param hostname: name of the mqtt broker
         :param port: port of the mqtt broker as int
